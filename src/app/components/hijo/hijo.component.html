@@ -1,0 +1,10 @@
+<h3>Hijo Component</h3>
+<hr>
+
+<h5 *ngIf="dataService.nombre$ | async as message; else noData">
+  {{message}}
+</h5>
+
+<ng-template #noData>
+<h5>Aun sin emision de datos</h5>
+</ng-template>
